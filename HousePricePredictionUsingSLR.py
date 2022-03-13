@@ -280,7 +280,7 @@ reg = LinearRegression()
 reg.fit(X_train,y_train)
 y_predict = reg.predict(X_test)
 print("accuracy", sum(y_predict)/sum(y_test))
-fig = plt.figure(figsize=(10,7))gi
+fig = plt.figure(figsize=(10,7))
 _ = sns.kdeplot(y_test)
 _ = sns.kdeplot(y_predict)
 
